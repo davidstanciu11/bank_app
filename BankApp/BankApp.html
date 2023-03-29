@@ -35,6 +35,7 @@
 					</div>
 				</ul>
 			</nav>
+			
 		</header>
 		<section id="hero_page">
 			<div class="description_hero">
@@ -48,7 +49,7 @@
 						Learn more
 						<span
 							><img
-								src="../assets/icons8-down-arrow-24.png"
+								src="../assets/icons8-down-arrow-16.png"
 								alt="arrow down"
 								class="arrow_down"
 						/></span></p
@@ -111,5 +112,20 @@
 		</section>
 		<section id="operations_page"></section>
 		<section id="reviews_page"></section>
+		
+				<div class="modal hidden" id="modal">
+					<button id="btn_modal">&times;</button>
+					<h2 class="modal_title">Open your bank account in just <br><span class="shapes">5 minutes</span></h2>
+					<form class="modal_form">
+					<label for="#first_name" class="label_modal">First Name</label>
+					<input type="text" id="first_name" class="input_modal">
+					<label for="#last_name" class="label_modal">Last Name</label>
+					<input type="text" id="last_name" class="input_modal">
+					<label for="#email" class="label_modal">Email Adress</label>
+					<input type="email" name="email" id="email" class="input_modal">
+				</form>
+				<button class="submit_modal">Submit</button>
+				</div>
+			<div class="overlay_modal hidden" id="overlay"></div>
 	</body>
 </html>
