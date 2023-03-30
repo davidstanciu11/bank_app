@@ -35,7 +35,6 @@
 					</div>
 				</ul>
 			</nav>
-			
 		</header>
 		<section id="hero_page">
 			<div class="description_hero">
@@ -111,35 +110,59 @@
 			</div>
 		</section>
 		<section id="operations_page">
-			<section class="title_feature">
-				<p class="par_subtitle operations_par">OPERATIONS</p>
-				<h2 class="par_subtitle_1">
-					Everything as simple as it possibly can.
-				</h2>
-				<div>
-					<button class="operations_btn" data-tab="1">1. Instant Transfers</button>
-					<button class="operations_btn" data-tab="2">2. Instant Loans</button>
-					<button class="operations_btn" data-tab="3">3. Instant Closing</button>
-					<div class="card_operation operation_transfer">a</div>
-					<div class="card_operation operation_loan"></div>
-					<div class="card_operation operation_closing"></div>
+			<div class="title_operations">
+				<p class="par_subtitle">OPERATIONS</p>
+				<h2 class="par_subtitle_1">Everything as simple as it possibly can.</h2>
+			</div>
+			<div id="operation_buttons">
+				<button class="operations_btn" data-tab="1" id="btn_operation1">1. Instant Transfers	</button>
+				<button class="operations_btn" data-tab="2" id="btn_operation2">2. Instant Loans</button>
+				<button class="operations_btn" data-tab="3" id="btn_operation3">3. Instant Closing</button>
+			</div>
+			<div id="operations_cards">
+				<div class="card_operation operation_transfer" id="data_1">
+					<img
+						src="../assets/transfer.png"
+						alt="transfer"
+						class="operation_icon"
+					/>
+					<div class="operation_content">
+						<h3 class="operation_title">
+							Transfer Instantly, No fees, No Panic
+						</h3>
+						<p class="operation_desc">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+							excepturi ullam minus earum voluptate ipsum pariatur ducimus, at
+							iure placeat rerum tenetur beatae consectetur officia
+							exercitationem vel blanditiis! Ut, deserunt exercitationem?
+							Architecto possimus magni at placeat, enim porro odit amet. Quo
+							non architecto perferendis vel.
+						</p>
+					</div>
 				</div>
-			</section>
+				<!-- <div class="card_operation operation_loan id="data_2"></div>
+				<div class="card_operation operation_closing" id="data_3"></div> -->
+			</div>
+		</section>
 		<section id="reviews_page"></section>
-		
-				<div class="modal hidden" id="modal">
-					<button id="btn_modal">&times;</button>
-					<h2 class="modal_title">Open your bank account in just <br><span class="shapes">5 minutes</span></h2>
-					<form class="modal_form">
-					<label for="#first_name" class="label_modal">First Name</label>
-					<input type="text" id="first_name" class="input_modal">
-					<label for="#last_name" class="label_modal">Last Name</label>
-					<input type="text" id="last_name" class="input_modal">
-					<label for="#email" class="label_modal">Email Adress</label>
-					<input type="email" name="email" id="email" class="input_modal">
-				</form>
-				<button class="submit_modal">Submit</button>
-				</div>
-			<div class="overlay_modal hidden" id="overlay"></div>
+
+		<div class="modal hidden" id="modal">
+			<button id="btn_modal">&times;</button>
+			<h2 class="modal_title">
+				Open your bank account in just <br /><span class="shapes"
+					>5 minutes</span
+				>
+			</h2>
+			<form class="modal_form">
+				<label for="#first_name" class="label_modal">First Name</label>
+				<input type="text" id="first_name" class="input_modal" />
+				<label for="#last_name" class="label_modal">Last Name</label>
+				<input type="text" id="last_name" class="input_modal" />
+				<label for="#email" class="label_modal">Email Adress</label>
+				<input type="email" name="email" id="email" class="input_modal" />
+			</form>
+			<button class="submit_modal">Submit</button>
+		</div>
+		<div class="overlay_modal hidden" id="overlay"></div>
 	</body>
 </html>

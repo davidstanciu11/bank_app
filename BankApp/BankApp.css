@@ -195,10 +195,7 @@ body {
 	z-index: 0;
 }
 
-#feature_page {
-	width: 100vw;
-	height: 100vh;
-}
+
 
 .par_subtitle {
 	font-size: 1.5rem;
@@ -366,6 +363,7 @@ body {
 	padding: 10px 30px 10px 30px;
 	cursor: pointer;
 	font-weight: bold;
+	z-index: 100;
 }
 
 .operations_btn:nth-child(1) {
@@ -384,5 +382,55 @@ body {
 
 .card_operation {
 	width: 100rem;
-	height: 40rem;
+	height: 25rem;
+	background-color: #094067;
+	color: #fffffe;
+	display: flex;
+}
+
+.title_operations {
+	display: grid;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 10rem;
+}
+
+#operation_buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#operations_cards {
+	display: grid;
+	justify-content: center;
+	z-index: 1;
+	margin-top: -1rem;
+}
+
+.operation_icon {
+	width: 6rem;
+	height: 6rem;
+	object-fit: contain;
+	margin-top: 5rem;
+	margin-left: 3rem;
+}
+
+.operation_content {
+	margin-left: 2rem;
+	padding: 50px;
+}
+
+.operation_title {
+	font-size: 2rem;
+}
+
+.operation_desc {
+	font-size: 1.4rem;
+	color: rgb(219, 216, 216);
+}
+
+
+.go_down {
+	transform: translateY(0);
 }
