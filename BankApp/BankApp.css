@@ -24,6 +24,11 @@ body {
 	object-fit: cover;
 }
 
+.navbar {
+	width: 100vw;
+	top: 0;
+}
+
 .nav_list {
 	position: fixed;
 	z-index: 998;
@@ -441,7 +446,6 @@ body {
 	background-color: #ffc6c7;
 }
 
-
 .title_2 {
 	color: #33272a;
 }
@@ -462,5 +466,5 @@ body {
 
 .img_scroll {
 	object-fit: cover;
-	width: 5rem;
+	width: 4.5rem;
 }
