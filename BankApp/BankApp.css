@@ -195,8 +195,6 @@ body {
 	z-index: 0;
 }
 
-
-
 .par_subtitle {
 	font-size: 1.5rem;
 	margin-left: auto;
@@ -381,9 +379,13 @@ body {
 }
 
 .card_operation {
+	display: none;
+}
+
+.card_operation_active {
 	width: 100rem;
 	height: 25rem;
-	background-color: #094067;
+	background-color: #00214d;
 	color: #fffffe;
 	display: flex;
 }
@@ -411,7 +413,7 @@ body {
 .operation_icon {
 	width: 6rem;
 	height: 6rem;
-	object-fit: contain;
+	object-fit: cover;
 	margin-top: 5rem;
 	margin-left: 3rem;
 }
@@ -428,9 +430,37 @@ body {
 .operation_desc {
 	font-size: 1.4rem;
 	color: rgb(219, 216, 216);
+	font-weight: bold;
+}
+
+.operation_loan {
+	background-color: #c3f0ca;
+}
+
+.operation_closing {
+	background-color: #ffc6c7;
 }
 
 
-.go_down {
-	transform: translateY(0);
+.title_2 {
+	color: #33272a;
+}
+
+.desc_2 {
+	color: #594a4e;
+}
+
+.scroll_up {
+	display: none;
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.img_scroll {
+	object-fit: cover;
+	width: 5rem;
 }

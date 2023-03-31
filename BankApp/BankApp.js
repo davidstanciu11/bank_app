@@ -8,8 +8,23 @@ const btnOperationDelete = document.getElementById("btn_operation3");
 const operationTransferContainer = document.getElementById("data_1");
 const operationLoanContainer = document.getElementById("data_2");
 const operationDeleteContainer = document.getElementById("data_3");
+const btnScroll = document.getElementById("btn_scroll");
+operationLoanContainer.classList.remove("card_operation_active");
+operationDeleteContainer.classList.remove("card_operation_active");
 
-let buttons = true;
+window.onscroll = () => {scrollToTop()};
+
+const scrollToTop = () => {
+	document.body.scrollTop > 500 || document.documentElement.scrollTop > 500
+		? (btnScroll.style.display = "block")
+		: (btnScroll.style.display = "none");
+};
+
+const getToTop = () => {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+};
+
 const openModal = () => {
 	modal.classList.remove("hidden");
 	overlay.classList.remove("hidden");
@@ -29,23 +44,31 @@ document.addEventListener("keydown", (e) => {
 });
 
 btnOperationTransfer.addEventListener("click", () => {
-	btnOperationTransfer.style.transform = buttons ? "translateY(-5px)" : "translateY(0)";
+	btnOperationTransfer.style.transform = "translateY(-5px)";
 	btnOperationLoan.style.transform = "translateY(0)";
 	btnOperationDelete.style.transform = "translateY(0)";
-	buttons = !buttons;
-
+	
+	operationLoanContainer.classList.remove("card_operation_active");
+	operationDeleteContainer.classList.remove("card_operation_active");
+	operationTransferContainer.classList.add("card_operation_active");
 });
 
 btnOperationLoan.addEventListener("click", () => {
 	btnOperationTransfer.style.transform = "translateY(0)";
-	btnOperationLoan.style.transform = buttons ? "translateY(-5px)" : "translateY(0)";
+	btnOperationLoan.style.transform = "translateY(-5px)";
 	btnOperationDelete.style.transform = "translateY(0)";
-	buttons = !buttons;
+	operationTransferContainer.classList.remove("card_operation_active");
+	operationDeleteContainer.classList.remove("card_operation_active");
+	operationLoanContainer.classList.add("card_operation_active");
 });
 
 btnOperationDelete.addEventListener("click", () => {
 	btnOperationTransfer.style.transform = "translateY(0)";
 	btnOperationLoan.style.transform = "translateY(0)";
-	btnOperationDelete.style.transform = buttons ? "translateY(-5px)" : "translateY(0)";
-	buttons = !buttons;
+	btnOperationDelete.style.transform = "translateY(-5px)";
+	operationTransferContainer.classList.remove("card_operation_active");
+	operationDeleteContainer.classList.add("card_operation_active");
+	operationLoanContainer.classList.remove("card_operation_active");
 });
+
+btnScroll.addEventListener("click", getToTop);
