@@ -14,6 +14,7 @@ const hiddenSections = document.querySelectorAll(".section_hidden");
 const slides = document.querySelectorAll(".slide");
 const btnLeftSlider = document.querySelector(".slider_btn_left");
 const btnRightSlider = document.querySelector(".slider_btn_right");
+const dotsSlider = document.querySelector(".dots");
 
 //Operation Container
 operationLoanContainer.classList.remove("card_operation_active");
@@ -103,6 +104,30 @@ const goToSlide = (slide) => {
 	);
 };
 goToSlide(0);
+
+//Dots Slider
+
+const createDots = () => {
+	slides.forEach((empty, i) => {
+		dotsSlider.insertAdjacentHTML(
+			"beforeend",
+			`<buttton class="dots_btn" data-slide="${i}"></button>`
+		);
+	});
+};
+createDots();
+
+const activateDot = (slide) => {
+	document
+		.querySelectorAll(".dots_btn")
+		.forEach((dot) => dot.classList.remove("dots_btn_active"));
+
+	document
+		.querySelector(`.dots_btn[data-slide="${slide}"]`)
+		.classList.add("dots_btn_active");
+};
+activateDot(0);
+
 //EventListeners
 
 btnOpenModal.addEventListener("click", openModal);
@@ -159,9 +184,19 @@ navigation.addEventListener("mouseout", (e) => {
 btnRightSlider.addEventListener("click", () => {
 	curSlide === maxSlide - 1 ? (curSlide = 0) : curSlide++;
 	goToSlide(curSlide);
+	activateDot(curSlide);
 });
 
 btnLeftSlider.addEventListener("click", () => {
 	curSlide === 0 ? (curSlide = maxSlide - 1) : curSlide--;
 	goToSlide(curSlide);
+	activateDot(curSlide);
+});
+
+dotsSlider.addEventListener("click", (e) => {
+	if (e.target.classList.contains("dots_btn")) {
+		const { slide } = e.target.dataset;
+		goToSlide(slide);
+		activateDot(slide);
+	}
 });

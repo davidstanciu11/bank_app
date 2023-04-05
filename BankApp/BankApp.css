@@ -513,6 +513,7 @@ body {
 	position: absolute;
 	width: 120rem;
 	left: -60rem;
+	transition: all 0.7s;
 }
 
 .profile_img {
@@ -572,11 +573,91 @@ body {
 .slider_btn_left {
 	left: 5%;
 	transform: translate(-50%, -50%);
-
 }
 
 .slider_btn_right {
 	right: 2%;
 	transform: translate(-50%, -50%);
+	top: 36rem;
+}
 
+.dots {
+	position: absolute;
+	bottom: -25rem;
+}
+#reviews_page {
+	width: 100vw;
+	margin-bottom: 10rem;
+	height: 50vh;
+}
+
+.dots_btn {
+	height: 1rem;
+	width: 1rem;
+	background-color: #8b8b8b;
+	border-radius: 50%;
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.5s;
+	margin-left: 1rem;
+	opacity: 0.7;
+}
+
+
+.dots_btn_active {
+	background-color: #343434;
+	opacity: 1;
+}
+
+.footer {
+	width: 100vw;
+	margin-top: 40rem;
+	background-color: #000;
+	color: #fffffe;
+}
+
+.footer_heading {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5rem;
+}
+
+.footer_title {
+	font-size: 2.5rem;
+	letter-spacing: 0.5px;
+}
+
+.footer_button {
+	font-size: 1.8rem;
+	margin-top: 2rem;
+	padding: 10px 30px;
+	border-radius: 20px;
+	cursor: pointer;
+	background-color: #e2992a;
+	font-weight: bold;
+	color: #323131;
+}
+
+.footer_button:hover {
+	background-color: #ff8906;
+}
+
+.footer_list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+.footer_links{
+	list-style: none;
+	margin-left: 2rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: #e4e4e4;
+}
+
+.copyright {
+	margin-left: 2rem;
 }
