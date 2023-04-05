@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/png" href="../assets/logo.png" />
+		<link rel="icon" type="image/png" href="../assets/icon.png" />
 		<title>BankApp</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,15 +28,21 @@
 						<h1 id="logo_title">LionSociety</h1>
 					</div>
 					<div class="part_nav links_part">
-						<a class="navlinks" href="#feature_page"><li class="nav__link">Features</li></a>
-						<a class="navlinks" href="#operations_page"><li class="nav__link">Operations</li></a>
-						<a class="navlinks" href="#reviews_page"><li class="nav__link">Testimonials</li></a>
+						<a class="navlinks" href="#feature_page"
+							><li class="nav__link">Features</li></a
+						>
+						<a class="navlinks" href="#operations_page"
+							><li class="nav__link">Operations</li></a
+						>
+						<a class="navlinks" href="#reviews_page"
+							><li class="nav__link">Testimonials</li></a
+						>
 						<button id="btn_account">Open Account</button>
 					</div>
 				</ul>
 			</nav>
 		</header>
-		<section id="hero_page">
+		<section id="hero_page" class="section_hidden section_show">
 			<div class="description_hero">
 				<h2 class="hero_title">
 					When <span class="shapes">you</span> finally understand <br />
@@ -60,7 +66,7 @@
 				<img class="flower_png" src="../assets/flower.png" alt="flower" />
 			</div>
 		</section>
-		<section id="feature_page">
+		<section id="feature_page" class="section section_hidden section_show">
 			<div class="title_feature">
 				<p class="par_subtitle">FEATURES</p>
 				<h2 class="par_subtitle_1">
@@ -109,7 +115,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="operations_page">
+		<section id="operations_page" class="section section_hidden section_show">
 			<div class="title_operations">
 				<p class="par_subtitle">OPERATIONS</p>
 				<h2 class="par_subtitle_1">Everything as simple as it possibly can.</h2>
@@ -195,7 +201,91 @@
 				</div>
 			</div>
 		</section>
-		<section id="reviews_page"></section>
+		<section id="reviews_page" class="section section_hidden section_show">
+			<div class="title_operations">
+				<p class="par_subtitle">Not Sure Yet?</p>
+				<h2 class="par_subtitle_1">
+					Thousand of clients are already using our services.
+				</h2>
+			</div>
+			<div class="slider">
+				<div class="slide slide_1">
+					<h3 class="slider_title">The last step to an easier life</h3>
+					<p class="slider_description">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+						facilis minus minima harum adipisci sequi nesciunt nulla. Nemo animi
+						impedit earum minima consequatur hic optio, accusamus, illo sint
+						vitae magni esse sunt quae cumque expedita voluptates praesentium ex
+						aspernatur. Eligendi asperiores natus culpa iste consequatur nulla
+						ipsum fugit eveniet omnis.
+					</p>
+					<div class="profile">
+						<img
+							src="../assets/istockphoto-1338134336-170667a.jpg"
+							alt="profile picture"
+							class="profile_img"
+						/>
+						<div>
+							<h4 class="profile_name">John Doe</h4>
+							<p class="profile_location">London, UK</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide_2">
+					<h3 class="slider_title">I found what it was missing in my life!</h3>
+					<p class="slider_description">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis at
+						reprehenderit praesentium veritatis quasi sapiente quas fugiat! Quo,
+						nulla ex magni, sit optio, animi tempora eos enim ullam vitae
+						sapiente dolorum delectus ad numquam odio doloremque voluptatibus
+						aliquid rem quibusdam. Sint, nostrum pariatur voluptates quo quas
+						voluptate recusandae ipsa. In aliquam accusantium commodi, dolorum
+						at eius, voluptate sunt quae repudiandae mollitia aliquid provident
+						atque tempore est culpa cumque deserunt quaerat expedita, nam
+						consequuntur excepturi eum. Natus ut quae maiores mollitia.
+					</p>
+					<div class="profile">
+						<img
+							src="../assets/rsz_642d7178916b2.png"
+							alt="profile picture"
+							class="profile_img"
+						/>
+						<div>
+							<h4 class="profile_name">David Stanciu</h4>
+							<p class="profile_location">Bucharest, RO</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide_3">
+					<h3 class="slider_title">My niece told about me about this and now I can't live without it!</h3>
+					<p class="slider_description">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+						vero quisquam vitae nostrum nemo molestias, sint aut accusamus
+						eligendi deserunt dolorum. Eius dolore blanditiis eum, architecto
+						quo unde dolorem iure neque vel eaque praesentium officia quis
+						aliquid, repellendus voluptate. Delectus sapiente repellat odit
+						porro dolores molestias magni earum tenetur atque neque ipsa
+						molestiae quia consequuntur eligendi, suscipit excepturi, distinctio
+						a.
+					</p>
+					<div class="profile">
+						<img
+							src="../assets/istockphoto-1311084168-170667a.jpg"
+							alt="profile picture"
+							class="profile_img"
+						/>
+						<div>
+							<h4 class="profile_name">Jane Doe</h4>
+							<p class="profile_location">Amsterdam, NL</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="slider_btn slider_btn_left">&larr;</button>
+			<button class="slider_btn slider_btn_right">&rarr;</button>
+
+		</section>
 
 		<button class="scroll_up" id="btn_scroll">
 			<img src="../assets/scroll_up.png" alt="scroll up" class="img_scroll" />
