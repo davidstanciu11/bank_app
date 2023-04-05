@@ -160,3 +160,8 @@ btnRightSlider.addEventListener("click", () => {
 	curSlide === maxSlide - 1 ? (curSlide = 0) : curSlide++;
 	goToSlide(curSlide);
 });
+
+btnLeftSlider.addEventListener("click", () => {
+	curSlide === 0 ? (curSlide = maxSlide - 1) : curSlide--;
+	goToSlide(curSlide);
+});
