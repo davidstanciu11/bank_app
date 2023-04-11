@@ -43,6 +43,10 @@ body {
 	top: 0;
 }
 
+.menu_navbar {
+	display: none;
+}
+
 .nav_list {
 	position: fixed;
 	z-index: 998;
@@ -91,7 +95,7 @@ body {
 	);
 	border: none;
 	border-radius: 20px;
-	padding: 7px 20px 7px 20px;
+	padding: 7px 20px;
 	font-size: 13.5px;
 	font-family: "Inter", sans-serif;
 	font-weight: bold;
@@ -284,6 +288,7 @@ body {
 	box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
 	max-width: 60rem;
 	height: 45rem;
+	border-radius: 3rem;
 }
 
 .overlay_modal {
@@ -333,9 +338,9 @@ body {
 	margin-right: 4rem;
 	width: 30rem;
 	height: 2.5rem;
-	border-color: rgb(243, 242, 242);
 	border-radius: 10px;
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	box-shadow: rgba(223, 148, 9, 0.3) 0px 0px 0px 3px;
+	border: none;
 }
 
 .submit_modal {
@@ -378,7 +383,7 @@ body {
 	font-family: "Poppins", sans-serif;
 	border: none;
 	border-radius: 20px;
-	padding: 10px 30px 10px 30px;
+	padding: 10px 30px;
 	cursor: pointer;
 	font-weight: bold;
 	z-index: 100;

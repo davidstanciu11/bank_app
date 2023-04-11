@@ -13,6 +13,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="BankApp.css" />
+		<link rel="stylesheet" href="MobileResponsive.css">
 		<script src="./BankApp.js" defer></script>
 	</head>
 	<body>
@@ -28,17 +29,18 @@
 						<h1 id="logo_title">LionSociety</h1>
 					</div>
 					<div class="part_nav links_part">
-						<a class="navlinks" href="#feature_page"
+						<a class="navlinks" href="#feature_page" onclick="linkedClicked()"
 							><li class="nav__link">Features</li></a
 						>
-						<a class="navlinks" href="#operations_page"
+						<a class="navlinks" href="#operations_page"  onclick="linkedClicked()"
 							><li class="nav__link">Operations</li></a
 						>
-						<a class="navlinks" href="#reviews_page"
+						<a class="navlinks" href="#reviews_page" onclick="linkedClicked()"
 							><li class="nav__link">Testimonials</li></a
 						>
 						<button id="btn_account">Open Account</button>
 					</div>
+					<img src="../assets/menu.png" alt="menu" class="menu_navbar" onclick="menuBar()">
 				</ul>
 			</nav>
 		</header>
@@ -80,7 +82,7 @@
 					alt=""
 					width="500px"
 				/>
-				<div>
+				<div class="subcontainer_mobile">
 					<img src="../assets/computer.png" alt="" class="icon_container" />
 					<h2 class="container_title">100% Digital Bank</h2>
 					<p class="container_desc">
@@ -92,7 +94,7 @@
 				</div>
 			</div>
 			<div class="container">
-				<div class="subcontainer">
+				<div class="subcontainer subcontainer_mobile">
 					<img src="../assets/arrow_up.png" alt="" class="icon_container" />
 					<h2 class="container_title">With Us Your Money Can Grow</h2>
 					<p class="container_desc">
@@ -105,7 +107,7 @@
 			</div>
 			<div class="container">
 				<img class="container_img" src="../assets/card.jpg" alt="" />
-				<div class="subcontainer_1">
+				<div class="subcontainer_1 subcontainer_mobile">
 					<img src="../assets/cards.png" alt="" class="icon_container" />
 					<h2 class="container_title">Free Debit Card Included</h2>
 					<p class="container_desc">

@@ -16,6 +16,25 @@ const btnLeftSlider = document.querySelector(".slider_btn_left");
 const btnRightSlider = document.querySelector(".slider_btn_right");
 const dotsSlider = document.querySelector(".dots");
 
+
+const linkedClicked = () => {
+	let x = document.querySelector(".links_part");
+	x.style.display = "none";
+	overlay.classList.add("hidden");
+};
+
+
+const  menuBar =() => {
+	let x = document.querySelector(".links_part");
+	if (x.style.display === "block") {
+		x.style.display = "none";
+		overlay.classList.add("hidden");
+	} else {
+		x.style.display = "block";
+		overlay.classList.remove("hidden");
+	}
+}
+
 //Operation Container
 operationLoanContainer.classList.remove("card_operation_active");
 operationDeleteContainer.classList.remove("card_operation_active");
@@ -80,8 +99,9 @@ const blurNav = (e, opacity) => {
 		});
 	}
 };
-
 //Animation onScroll
+
+
 
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
