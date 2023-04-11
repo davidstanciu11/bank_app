@@ -16,15 +16,17 @@ const btnLeftSlider = document.querySelector(".slider_btn_left");
 const btnRightSlider = document.querySelector(".slider_btn_right");
 const dotsSlider = document.querySelector(".dots");
 
-
 const linkedClicked = () => {
 	let x = document.querySelector(".links_part");
-	x.style.display = "none";
+	if (document.innerWidth < 767 && x.style.display === "block") {
+		x.style.display = "none";
+	} else if (document.innerWidth > 767) {
+		x.style.display = "flex";
+	}
 	overlay.classList.add("hidden");
 };
 
-
-const  menuBar =() => {
+const menuBar = () => {
 	let x = document.querySelector(".links_part");
 	if (x.style.display === "block") {
 		x.style.display = "none";
@@ -33,7 +35,7 @@ const  menuBar =() => {
 		x.style.display = "block";
 		overlay.classList.remove("hidden");
 	}
-}
+};
 
 //Operation Container
 operationLoanContainer.classList.remove("card_operation_active");
@@ -100,8 +102,6 @@ const blurNav = (e, opacity) => {
 	}
 };
 //Animation onScroll
-
-
 
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
