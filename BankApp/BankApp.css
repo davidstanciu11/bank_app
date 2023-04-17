@@ -120,9 +120,9 @@ body {
 }
 
 .hero_title {
-	font-size: 5rem;
+	font-size: 4.7rem;
 	font-weight: 700;
-	margin-left: 5.8rem;
+	margin-left: 9rem;
 }
 
 .shapes {
@@ -149,9 +149,10 @@ body {
 
 .arrow_down {
 	animation: moveArrow 1s alternate-reverse infinite;
-	width: 2rem;
-	height: 2rem;
+	width: 1.8rem;
+	height: 1.8rem;
 	margin-left: -0.4rem;
+	
 }
 
 @keyframes moveArrow {
@@ -163,20 +164,22 @@ body {
 	}
 }
 
+
+
 .hero_desc {
 	font-size: 2rem;
 	font-weight: bold;
-	margin-left: 5rem;
+	margin-left: 8rem;
 	margin-top: 1rem;
 }
 
 .transit_parg {
 	text-decoration: none;
 	color: #ff8906;
-	margin-left: 5rem;
+	margin-left: 8rem;
 	margin-top: 3rem;
 	position: relative;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 }
 
