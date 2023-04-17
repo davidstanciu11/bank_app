@@ -15,7 +15,7 @@
 	}
 
 	.part_nav {
-		z-index: 1000;
+		z-index: 800;
 	}
 
 	.navlinks {
@@ -24,6 +24,7 @@
 
 	.links_part {
 		gap: 1rem;
+		z-index: 300;
 	}
 
 	.nav_list {
@@ -87,7 +88,7 @@
 	}
 
 	.overlay_modal {
-		z-index: 940;
+		z-index: 950;
 	}
 	.par_subtitle {
 		text-align: center;

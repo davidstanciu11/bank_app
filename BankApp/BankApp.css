@@ -387,6 +387,7 @@ body {
 	cursor: pointer;
 	font-weight: bold;
 	z-index: 100;
+	transition: all 0.5s;
 }
 
 .operations_btn:nth-child(1) {
@@ -413,6 +414,7 @@ body {
 	background-color: #00214d;
 	color: #fffffe;
 	display: flex;
+	transition: all 0.5s;
 }
 
 .title_operations {

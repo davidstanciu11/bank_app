@@ -16,11 +16,12 @@ const btnLeftSlider = document.querySelector(".slider_btn_left");
 const btnRightSlider = document.querySelector(".slider_btn_right");
 const dotsSlider = document.querySelector(".dots");
 
+
 const linkedClicked = () => {
 	let x = document.querySelector(".links_part");
-	if (document.innerWidth < 767 && x.style.display === "block") {
+	if (Window.innerWidth < 767 && x.style.display === "block") {
 		x.style.display = "none";
-	} else if (document.innerWidth > 767) {
+	} else if (Window.innerWidth > 767) {
 		x.style.display = "flex";
 	}
 	overlay.classList.add("hidden");
@@ -96,8 +97,11 @@ const blurNav = (e, opacity) => {
 		siblings.forEach((el) => {
 			if (el !== link) {
 				el.style.opacity = opacity;
+				el.style.transition = "all 0.25s";
 			}
 			logo.style.opacity = opacity;
+			logo.style.transition = "all 0.25s";
+
 		});
 	}
 };
